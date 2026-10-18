@@ -47,4 +47,8 @@ Reinstalling to fix Bug 2 doesn't just fail to help - reinstalling in general ca
 
 ## If you'd rather not run these checks by hand
 
-ClaudeGuard (https://sidheart.gumroad.com/l/claudeguard, $9.99 one-time) automates the Bug 1 / Code Integrity side of this: it runs the diagnostic above automatically, backs up ~/.claude before you touch anything, and verifies nothing was lost after a reinstall. Everything above is free regardless of whether you ever use it - this repo exists to document the bug, not gate the information behind a purchase.
+Everything above - the full diagnosis for both bugs - is free regardless of whether you ever use ClaudeGuard. This repo exists to document the bugs, not gate the information behind a purchase.
+
+What the free checks above don't do: protect you while you act on them. The dangerous moment isn't diagnosing which bug you have - it's what happens next. Misdiagnose and reinstall for Bug 2 (which doesn't fix it), or just reinstall "to be safe" without backing up first, and you risk the exact chat-history-loss issue described above - silently, with no warning, even though the transcript files are still sitting on disk.
+
+ClaudeGuard (https://sidheart.gumroad.com/l/claudeguard, $9.99 one-time) is the safety net for that moment: it runs the diagnostic above automatically, backs up ~/.claude before you touch anything - reinstall, repair, build switch, whatever you decide - and verifies afterward that nothing was actually lost. If you're confident running the PowerShell above and handling the fix yourself, you don't need it. If you'd rather not be the person who finds out the hard way that a backup should have happened first, that's what it's for.
